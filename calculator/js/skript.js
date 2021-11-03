@@ -1,21 +1,26 @@
-function calc(num1, num2, operator) {
+function calc(num1, num2, operator) {    
+    
+    const isNotValid = (typeof num1 !== 'number' || typeof num2 !== 'number');
+    
+    if (isNotValid) {
+        return String ('Error!');
+    }
+
     switch (operator) {
         case '+':
-            num1 + num2;
-            break;
+            return num1 + num2;
         case '-':
-            num1 - num2;
-            break;
+            return num1 - num2;
         case '*':
-            num1 * num2;
-            break;
+            return num1 * num2;
         case '/':
-            num1 / num2;
-            break;
+            if (num2 === 0) {
+                return String('Can`t divide by zero!')
+            }
+            return num1 / num2;
         default:
-            alert('Unknown operator!')
-    }
-    
+            return String('Unknown operator!');
+    } 
 }
 
-console.log(calc(1, 2, '+'));
+console.log(calc(5, 2, '*'));
