@@ -1,11 +1,56 @@
-// let user = {
-//     name: "John",
-//     surname: "Smith",
-// }
+// //1 решил сам
+// let user = {};
 
-// user.surname = "Pete";
+// user.name = 'John';
+// user.surname = 'Smith';
+
+// user.name = 'Pete';
+
 // delete user.name;
 
-isEmpty(obj)
+// //2 не смог решить
+// let schedule = {
+//     name: 'Pete'
+// };
 
-console.log(user.name);
+// function isEmpti(obj) {
+//     for (let key in schedule) {
+//         return false
+//     }
+//     return true
+// }
+
+// //3 сделал сам по дыбильному
+// let salaries = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 130,
+// }
+
+// // function summZp(obj) {
+// let sum = 0
+// for (let key in salaries) {
+//     // return salaries.John + salaries.Ann + salaries.Pete;
+//     sum += salaries[key];
+// }
+// // return 0;
+// // }
+
+// //4 не смог решить
+// let menu = {
+//     width: 200,
+//     height: 100,
+//     title: 'My menu'
+// };
+
+// function multiplyNumeric(obj) {
+//     for (let key in obj) {
+//         if (typeof obj[key] === 'number') {
+//             obj[key] *= 2;
+//         }
+//     }
+// }
+
+// multiplyNumeric(menu);
+
+// console.log(menu.width)
