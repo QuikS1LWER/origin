@@ -5,15 +5,14 @@ function calc(num1, num2, operator) {
     if (isNotValid) {
         return String ('Error!');
     }
-
     switch (operator) {
-        case '+':
+        case 'sum':
             return num1 + num2;
-        case '-':
+        case 'sub':
             return num1 - num2;
-        case '*':
+        case 'mult':
             return num1 * num2;
-        case '/':
+        case 'div':
             if (num2 === 0) {
                 return String('Can`t divide by zero!')
             }
@@ -23,4 +22,4 @@ function calc(num1, num2, operator) {
     } 
 }
 
-console.log(calc(5, 2, '*'));
+console.log(calc(5, 2, 'sum'));
