@@ -72,15 +72,63 @@ console.log(macen.appleComputers) */
 
 
 
-let user = {
-    name : 'John',
-    age: 30
+/* let user = {};
+user.name = 'John';
+user.surname = 'Smith';
+user.name = 'Peter';
+delete user.name;
+console.log(user); */
+
+
+
+/* let schedule = {
+// '8:30': 'get up'
+};
+
+function isEmpty(obj) {
+    for (key in obj) {
+        return false;
+    }
+    return true;
+}
+console.log(isEmpty(schedule)) */
+
+
+
+/* let salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130
 }
 
-let clone = {};
-// for (let key in user)
-// clone[key] = user[key];
+let sum = 0;
 
-Object.assign(clone, user);
+sumSal(salaries);
 
-console.log(clone)
+function sumSal(obj) {
+    for (key in obj) {
+        sum += obj[key];
+    }
+}
+
+alert(sum); */
+
+
+
+/* let menu = {
+    width: 200,
+    height: 300,
+    title: "My menu"
+};
+
+multiplyNumeric(menu);
+
+function multiplyNumeric(obj) {
+    for (key in obj) {
+        if (typeof obj[key] === 'number') {
+            obj[key] *= 2;
+        }
+    }
+}
+
+console.log(menu); */
