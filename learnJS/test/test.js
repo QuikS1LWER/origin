@@ -132,3 +132,37 @@ function multiplyNumeric(obj) {
 }
 
 console.log(menu); */
+
+
+
+/* let user = {
+    name: 'John',
+    age: 30
+}
+let a = prompt('What you whant to know about user','')
+alert(user[a]); */
+
+
+
+/* let fruit = 'apple';
+let obj = {
+    [fruit + 'Computers']: 3
+} 
+console.log(obj); */
+
+
+
+/* let user = {
+    name: 'John',
+    age: 30,
+    height: 178,
+    weight: 70
+}
+
+let clone = {};
+for (key in user) {
+    clone[key] = user[key];
+}
+
+console.log(clone);
+ */
