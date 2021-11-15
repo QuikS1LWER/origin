@@ -16,11 +16,9 @@ showList(list);
    function addTask(obj, task) {
         obj[task] = 'To Do';
    }
-
    function deleteTask(obj, task) {
         delete obj[task];
    }
-
    function changeStatus(obj, task, status) {
         obj[task] = status;
    }
