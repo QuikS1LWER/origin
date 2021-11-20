@@ -166,3 +166,145 @@ for (key in user) {
 
 console.log(clone);
  */
+
+
+
+/* let obj, method;
+
+obj = {
+    go: function() { console.log(this); }
+};
+
+// console.log(obj.go());
+obj.go();
+(obj.go)();
+(method = obj.go)();
+(obj.go || obj.stop)(); */
+
+
+
+/* var car1 = {
+    name: 'ZAZ',
+    isTurnOn: false,
+    speed: 0,
+    engine: {
+        v: 1.6,
+        horsesPower: 120
+    },
+    start: function() {
+        this.isTurnOn = true;
+        this.speed = 10; 
+    }
+};
+
+alert(car1.isTurnOn);
+car1.start();
+alert(car1.isTurnOn); */
+
+
+
+/* function makeUser() {
+    return {
+        name: 'John',
+        ref() {
+            return this; 
+        }
+    };
+};
+
+let user = makeUser();
+
+alert(user.ref().name); */
+
+
+
+/* const calculator = {
+    read() {
+        this.num1 = +prompt('Give number 1','');
+        this.num2 = +prompt('Give number 2','');
+    },
+    sum () {
+        alert(this.num1 + this.num2);
+    },
+    mult () {
+        alert(this.num1 * this.num2);
+    }
+}
+
+calculator.read();
+calculator.sum();
+calculator.mult(); */
+
+
+
+/* let ladder = {
+    step: 0,
+    up() {
+      this.step++;
+      return this;
+    },
+    down() {
+      this.step--;
+      return this;
+    },
+    showStep() { 
+      console.log( this.step );
+      return this;
+    }
+  };
+
+ladder.up().up().down().showStep().up().showStep(); */
+
+
+
+/* let str = 'Widget with id';
+let target = 'i';
+let pos = -1;
+while ((pos = str.indexOf(target, pos + 1)) != -1) {
+    console.log(pos);
+} */
+
+
+
+/* function ucFirst(str) {
+    if (!str) return str;
+    return (str[0].toUpperCase() + str.slice(1));
+}
+console.log(ucFirst('vagina')); */
+
+
+
+/* function truncate(str, maxlength) {
+    if (str.length > maxlength) {
+        return str.slice(0, maxlength - 1) + '...';
+    } else {
+        return str;
+    }
+}
+console.log(truncate('Pipiter is the most beautiful body part', 20)) */
+
+
+
+/* function checkSpam(str) {
+    if (str.includes('viagra') || str.includes('XXX')) {
+        return true;
+    } else if {
+        
+    } else {
+        return false;
+    }
+}
+console.log(checkSpam('buy viagra')) */
+
+// console.log(String.fromCodePoint(120))
+
+/* function extractCurrencyValue(str) {
+    let num = '';
+    while ((num = str[0].Number) != -1) {
+        return num
+    }
+}
+console.log(extractCurrencyValue('$120')) */
+
+
+
