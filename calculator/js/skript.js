@@ -23,3 +23,4 @@ function calc(num1, num2, operator) {
 }
 
 console.log(calc(5, 2, 'sum'));
+//test
