@@ -3,7 +3,8 @@ function calc(num1, num2, operation) {
     const isNotValid = (typeof num1 !== 'number' || typeof num2 !== 'number');
 
     if (isNotValid) {
-        return String ('Error!');
+        console.log('Error!');
+        return;
     }
 
     let operations = {
@@ -14,5 +15,4 @@ function calc(num1, num2, operation) {
     }
     console.log(operations[operation]);
 }
-
-console.log(calc(5, 0, 'sum'));
+calc(8, 6, 'mult')
