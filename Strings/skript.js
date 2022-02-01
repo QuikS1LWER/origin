@@ -24,4 +24,4 @@ function showVerticalMessage(str) {
         }
     }
 }
-showVerticalMessage('марафонsukablyat');
+showVerticalMessage('марафон');
