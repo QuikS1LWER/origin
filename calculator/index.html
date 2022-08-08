@@ -4,9 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>JavaScript Marathone</title>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <script src="js/objCalc.js"></script>
+<form class="calc" action="#">
+  <label class="sr-only" for="result">калькулятор</label>
+  <input class="calc__result" id="result" type="text" name="result" value="0" readonly>
+  <ul class="calc__list">
+    <li class="calc__item">
+      <button class="calc__btn calc__btn--reset" type="reset">C</button>
+    </li>
+    <li class="calc__item">
+      <button class="calc__btn calc__btn--erase" type="button"
+              style="background-image: url(images/icon/erase.svg);"></button>
+    </li>
+    <li class="calc__item">
+      <button class="calc__btn calc__btn--operation" type="button">÷</button>
+    </li>
+    <li class=" calc__item">
+      <button class="calc__btn calc__btn--num" type="button">7</button>
+    </li>
+    <li class=" calc__item">
+      <button class="calc__btn calc__btn--num" type="button">8</button>
+    </li>
+    <li class=" calc__item">
+      <button class="calc__btn calc__btn--num" type="button">9</button>
+    </li>
+    <li class=" calc__item">
+      <button class="calc__btn calc__btn--operation" type="button">×</button>
+    </li>
+    <li class=" calc__item">
+      <button class="calc__btn calc__btn--num" type="button">4</button>
+    </li>
+    <li class=" calc__item">
+      <button class="calc__btn calc__btn--num" type="button">5</button>
+    </li>
+    <li class=" calc__item">
+      <button class="calc__btn calc__btn--num" type="button">6</button>
+    </li>
+    <li class=" calc__item">
+      <button class="calc__btn calc__btn--operation" type="button">–</button>
+    </li>
+    <li class=" calc__item">
+      <button class="calc__btn calc__btn--num" type="button">1</button>
+    </li>
+    <li class=" calc__item">
+      <button class="calc__btn calc__btn--num" type="button">2</button>
+    </li>
+    <li class=" calc__item">
+      <button class="calc__btn calc__btn--num" type="button">3</button>
+    </li>
+    <li class=" calc__item">
+      <button class="calc__btn calc__btn--operation" type="button">+</button>
+    </li>
+    <li class=" calc__item">
+      <button class="calc__btn calc__btn--num" type="button">0</button>
+    </li>
+    <li class=" calc__item">
+      <button class="calc__btn calc__btn--equals" type="button">=</button>
+    </li>
+  </ul>
+</form>
 </body>
+<script src="js/objCalc.js"></script>
 </html>
