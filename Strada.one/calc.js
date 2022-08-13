@@ -12,7 +12,6 @@
 
 console.log(calc('add',10,5))*/
 
-
 function calc(operator, operand1, operand2) {
     switch (operator) {
         case 'add':
