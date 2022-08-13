@@ -28,4 +28,4 @@ function calc(operator, operand1, operand2) {
     }
 }
 
-console.log(calc('subtract',10,5))
+console.log(calc('subtract',12,5))
