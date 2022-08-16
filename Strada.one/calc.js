@@ -13,14 +13,19 @@
 console.log(calc('add',10,5))*/
 
 function calc(operator, operand1, operand2) {
+    const operations = {
+        add : '+',
+        mult : '*',
+        sub : '-',
+    }
     switch (operator) {
-        case 'add':
+        case operations.add:
             return operand1 + operand2;
             break;
-        case 'multi':
+        case operations.mult:
             return operand1 * operand2;
             break;
-        case'subtract':
+        case operations.sub:
             return operand1 - operand2;
             break
         default:
@@ -28,4 +33,4 @@ function calc(operator, operand1, operand2) {
     }
 }
 
-console.log(calc('subtract',10,5))
+console.log(calc('+',10,5))
